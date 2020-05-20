@@ -11,8 +11,8 @@ import XCTest
 
 class MoodAnalyzerTests: XCTestCase {
     func test_givenAMessage_whenItIsSadMood_ShouldReturnSAD() throws {
-        let analyzer=Analyzer()
-        let mood = analyzer.analyseMood(mood: "I am in Sad Mood")
+        let analyzer=Analyzer(message:"I am in Sad Mood")
+        let mood = analyzer.analyseMood()
         XCTAssertEqual("SAD",mood)
     }
 }
