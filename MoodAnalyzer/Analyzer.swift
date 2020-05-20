@@ -14,8 +14,8 @@ class Analyzer {
     }
     func analyseMood() ->String {
         if message.contains("Sad"){
-           return "SAD"
-       }
-        return ""
+           return "SAD"            
+        }
+        return "HAPPY"
     }
 }

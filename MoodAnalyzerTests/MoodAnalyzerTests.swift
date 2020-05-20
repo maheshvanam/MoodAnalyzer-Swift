@@ -15,4 +15,9 @@ class MoodAnalyzerTests: XCTestCase {
         let mood = analyzer.analyseMood()
         XCTAssertEqual("SAD",mood)
     }
+    func test_givenAMessage_whenItIsHappyMood_ShouldReturnHappy() throws {
+        let analyzer=Analyzer(message:"I am in Happy Mood")
+        let mood = analyzer.analyseMood()
+        XCTAssertEqual("HAPPY",mood)
+    }
 }
